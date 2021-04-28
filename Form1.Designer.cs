@@ -32,6 +32,7 @@ namespace polibio
             this.tab_data = new System.Windows.Forms.DataGridView();
             this.lbl_decifrato = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_info = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tab_data)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,12 +72,23 @@ namespace polibio
             this.label1.TabIndex = 2;
             this.label1.Text = "Cifratura Polibio";
             // 
+            // lbl_info
+            // 
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_info.Location = new System.Drawing.Point(38, 44);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(278, 17);
+            this.lbl_info.TabIndex = 3;
+            this.lbl_info.Text = "Clicca sulle lettere per cifrare o sui numeri per decriptare";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(350, 479);
+            this.Controls.Add(this.lbl_info);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_decifrato);
             this.Controls.Add(this.tab_data);
@@ -94,6 +106,7 @@ namespace polibio
         private System.Windows.Forms.DataGridView tab_data;
         private System.Windows.Forms.Label lbl_decifrato;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_info;
     }
 }
 
